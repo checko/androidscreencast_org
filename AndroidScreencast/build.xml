@@ -31,6 +31,10 @@
  
     <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
   	<mkdir dir="${dist}"/>
+	<copy todir="${build}">
+	    <fileset dir="${src}"
+	        includes="**/*.png" />
+	</copy>
     <jar jarfile="${dist}/${mainjar}" basedir="${build}"/>
   	<copy file="${sdk-ddmlib}" tofile="${dist}/${ddmlib}"/>
   </target>
