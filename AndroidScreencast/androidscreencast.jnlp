@@ -13,10 +13,8 @@
       <update check="timeout" policy="always"/>
    </information> 
    <resources>
-      <j2se version="1.5+" href="http://java.sun.com/products/autodl/j2se"/>
-      <j2se version="1.5+"/>
-      <jar href="androidscreencast.jar" main="true" download="eager"/>
-      <jar href="ddmlib.jar" main="false" download="eager"/>
+      <jar href="androidscreencast.jar" main="true"/>
+      <jar href="ddmlib.jar" main="false"/>
    </resources>
    <application-desc main-class="net.srcz.android.screencast.Main"/>
    <security>
